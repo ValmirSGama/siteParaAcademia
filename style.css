@@ -3,6 +3,7 @@
 :root{
     --color-backgroud-dark: #000;
     --color-white: #fff;
+    --black-opacity: rgba(0, 0, 0, 0.7);
     --main-color-red: rgb(199, 0, 0);
     --color-scrollbar-track: #2a2a2a;
     --color-light-grey-bg: #aaa;
@@ -261,7 +262,7 @@ section{
 
 .features .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(32rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -390,7 +391,7 @@ section{
 
 .trainers .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(29rem, fr));
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -399,7 +400,7 @@ section{
     overflow: hidden;
     position: relative;
     border: .1rem solid var(--color-light-grey-bg);
-    box-shadow: var(--color-white);
+    box-shadow: var(--color-white) 0 .5rem 1rem 0;
     border-radius: .3rem;
 }
 
@@ -449,6 +450,36 @@ section{
 
 .trainers .box-container .box .content .share a:hover{
     color: var(--main-color-red);
+}
+
+.banner{
+    background: linear-gradient(var(--black-opacity), var(--black-opacity)),
+    url(image/academia.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.banner span{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--main-color-red);
+}
+
+.banner h3{
+    padding-top: 1rem;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+.banner p{
+    margin: 1rem auto;
+    max-width: 60rem;
+    font-size: 1.5rem;
+    color: var(--color-light-grey-bg);
+    line-height: 2;
 }
 
 @media(max-width: 991px){

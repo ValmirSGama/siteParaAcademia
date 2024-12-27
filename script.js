@@ -53,7 +53,7 @@ var swiper = new Swiper(".blogs-slider", {
         disableOnInteraction: false
     },
     pagination:{
-        el: "swiper-pagination",
+        el: ".swiper-pagination",
         clickable: true
     },
     breakpoints:{
